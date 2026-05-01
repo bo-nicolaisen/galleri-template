@@ -1,1 +1,1 @@
-# webboilerplate template
+# Galleri template
