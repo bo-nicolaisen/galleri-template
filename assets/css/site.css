@@ -10,7 +10,7 @@ body {
 #gallery {
   display: grid;
   place-items: center;
-  width: 80%;
+  width: 60%;
 }
 
 
@@ -18,12 +18,49 @@ body {
 .carousel-item {
    grid-row: 1/2;
    grid-column: 1/2;
+   display: grid;
 
   width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
+ 
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 2s ease;
+}
+
+.carousel-item img {
+   grid-row: 1/2;
+   grid-column: 1/2;
+  width: 100%;
+ aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.carousel-item p {
+  display: block;
+ grid-row: 1/2;
+   grid-column: 1/2;
+   align-self: end;
+  font-size: 1vw;
+  margin: 0;
+  padding: 0.5vw;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(248, 248, 248);
+}
+
+
+
+
+.carousel-item h2 {
+ grid-row: 1/2;
+   grid-column: 1/2;
+   align-self: start;
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 0.5vw;
+
+/*   background-color: rgba(0, 0, 0, 0.5); */
+  background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 0) 40%);
+  color: rgb(248, 248, 248);
 }
 
 
@@ -37,10 +74,19 @@ body {
   grid-column: 1/2;
 font-size: 2vw;
   color: rgb(248, 248, 248);
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.6);
   padding: 1vw 0.5vw ;
   cursor: pointer;
   z-index: 100;
+  opacity: 0.3;
+  transition: opacity 2s ease;
+}
+
+.gallery-arrow:hover {
+  
+   transition: opacity 0.3s ease;
+  opacity: 1;
+  
 }
 
 /* Skub venstre pil til den venstre kant af grid-cellen */
