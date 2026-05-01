@@ -61,14 +61,21 @@ opacity : 0.9;
 }
 
 .dot-container {
+     grid-row: 1/2;
+  grid-column: 1/2;
+  align-self: end;
   display: flex;
   justify-content: center;
   gap: 0.5vw;
   margin-top: 1vw;
+  z-index: 3000;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 0.5vw 0;
 }
 
 .dot{
-  background-color:rgba(223, 223, 223, 0.8);
+  background-color:rgba(223, 223, 223, 0.2);
   border-radius: 50%;
   width: 0.7vw;
   aspect-ratio: 1/1;
