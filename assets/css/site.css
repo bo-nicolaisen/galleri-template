@@ -41,6 +41,13 @@ font-size: 2vw;
   padding: 1vw 0.5vw ;
   cursor: pointer;
   z-index: 100;
+  opacity: 0.3;
+  transition: opacity 1s ease;
+}
+
+.gallery-arrow:hover {
+opacity : 0.9;
+  transition: opacity 0.3s ease;
 }
 
 /* Skub venstre pil til den venstre kant af grid-cellen */
